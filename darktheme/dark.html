@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark Theme</title>
+    <link rel="stylesheet" href="dak.css">
+    <link rel="stylesheet" href="	https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.css">
+    
+</head>
+<body>
+    <div class="hero">
+        <nav>
+            <img src="logo.png" alt="" class="logo">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Service</a></li>
+                <li><a href="#">Buy</a></li>
+                <li><a href="#">Customer</a></li>
+                <li><a href="#">Help</a></li>
+
+            </ul>
+            <i class="fas fa-moon" id="icon"></i>
+        </nav>
+        <div class="info">
+            <h1>I'am <span class="help"></span></h1>
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam voluptate<br> odit blanditiis! Cupiditate ratione doloribus officia sed accusamus voluptate minima?
+            </p>
+            <a href="">Download</a>
+        </div>
+        <div class="img">
+            <img src="pattern.png" alt="" class="back">
+            <img src="girl.png" alt="" class="main">
+        </div>
+        <div class="social">
+           <a href="https:/www.linkedin.com"><i class="fab fa-linkedin"></i></a>
+           <a href="https:/www.facebook.com"><i class="fab fa-facebook"></i></a>
+           <a href="https:/www.instagram.com"><i class="fab fa-instagram"></i></a>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+       <script>
+           var Type = new Typed(".help",
+           {
+               strings:["ijaas","webdeveloper","UI designer"],
+               typeSpeed:100,
+               backSpeed:100,
+               loop:true,
+           });
+       </script>
+
+
+<script>
+    var type=document.getElementById('icon');
+    type.onclick=function()
+    {
+        document.body.classList.toggle('darktheme');
+    }
+
+</script>
+
+</body>
+</html>
